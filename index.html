@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lithium</title>
+  <style>
+    html {
+      font-size: 20px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      max-width: 500px;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: -0.25rem;
+      text-align: center;
+      letter-spacing: -0.0625rem;
+    }
+
+    .tagline {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: #a0a0a0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .form-group {
+      position: relative;
+      width: 100%;
+      max-width: 25rem;
+      display: flex;
+      border-radius: 0.75rem;
+      background-color: #2a2a2a;
+      box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+      font-size: 16px;
+    }
+
+    input[type="email"] {
+      flex-grow: 1;
+      padding: 1.125rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.75rem 0 0 0.75rem;
+      background-color: #2a2a2a;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    input[type="email"]:focus {
+      outline: none;
+      background-color: #333333;
+    }
+
+    button {
+      background-color: #f5a742;
+      color: #1a1a1a;
+      border: none;
+      border-radius: 0 0.75rem 0.75rem 0;
+      padding: 1.125rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 3.75rem;
+    }
+
+    button:hover {
+      background-color: #f7b660;
+    }
+
+    .arrow-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: #1a1a1a;
+    }
+
+    ::placeholder {
+      color: #888888;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      html {
+        font-size: 16px;
+      }
+
+      .container {
+        scale: 1;
+        padding: 1rem;
+      }
+
+      .title {
+        font-size: 5rem;
+      }
+
+      .form-group {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      input[type="email"] {
+        padding: 1rem;
+      }
+
+      button {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Lithium</h1>
+    <p class="tagline">The last programming language</p>
+    <form action="https://formsubmit.co/8ae6ba846d7d5769d22b3ca6618054e1" method="POST" class="form-group">
+      <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" required>
+      <button type="submit" aria-label="Subscribe">
+        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+        </svg>
+      </button>
+    </form>
+  </div>
+</body>
+
+</html>
